@@ -6,22 +6,53 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="143dp"
+        android:layout_height="69dp"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="15dp"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo"
+        android:layout_centerHorizontal="true"
+        android:text="Leg Status"
+        android:textSize="50dp" />
+
+    <ImageView
+        android:id="@+id/img_straightFoot"
+        android:layout_width="244dp"
+        android:layout_height="259dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="23dp"
+        app:srcCompat="@drawable/foot1"
+        tools:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
 
     <Button
         android:id="@+id/buttonRequest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#414af4"
-        android:text="Click Here To Send HTTP Request To Server And See Response Displayed As Toast"
-        android:textColor="#ffffff"
+        android:layout_below="@+id/img_straightFoot"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="50dp" />
-
-    <ImageView
-        android:id="@+id/img_straightFoot"
-        android:layout_width="295dp"
-        android:layout_height="339dp"
         android:layout_centerInParent="true"
-        app:srcCompat="@drawable/foot1"
-        tools:layout_centerHorizontal="true" />
+        android:layout_centerVertical="true"
+        android:layout_marginTop="463dp"
+        android:background="#8BC34A"
+        android:text="Click Here To See Currently Leg Status"
+        android:textColor="#ffffff" />
+
+
+
+
 </RelativeLayout>
